@@ -74,6 +74,12 @@
     .tick-flip {
         border-radius: 0.11em !important;
     }
+
+    body {
+        overflow: hidden;
+        transform: scaleX(-1);
+
+    }
 </style>
 
 <div class='tick' data-did-init='handleTickInit'>
@@ -123,7 +129,6 @@
 </div>
 <script>
     function handleTickInit(tick) {
-
 
 
         Tick.helper.interval(function() {
